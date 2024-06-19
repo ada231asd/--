@@ -12,7 +12,7 @@ if (basename($_SERVER['PHP_SELF']) !== 'profile.php' && basename($_SERVER['PHP_S
     if ($_SESSION['RoleID'] == 1) {
         header("Location: admin.php");
     } else {
-        header("Location: profile.php");
+        header("Location: available_pcs.php");
     }
     exit();
 }

@@ -1,13 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = ""; // Замените на ваш пароль, если он отличается
-$dbname = "ComputerClubDB";
+$host = 'localhost';
+$dbname = 'ComputerClubDB';
+$username = 'root';
+$password = '';
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
+} catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
 ?>

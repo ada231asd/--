@@ -42,6 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         Логин: <input type="text" name="login" required><br>
         Пароль: <input type="password" name="password" required><br>
         <input type="submit" value="Вход">
+        <br>
+        <br>
+        <a href="register.php">Регистрация</a>
     </form>
 </body>
 </html>

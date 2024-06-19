@@ -62,6 +62,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         Email: <input type="email" name="email" required><br>
         Телефон: <input type="text" name="phone" required><br>
         <input type="submit" value="Регистрация">
+        <br>
+        <br>
+        <a href="login.php">Вход</a>
     </form>
 </body>
 </html>
